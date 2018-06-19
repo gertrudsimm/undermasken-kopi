@@ -1,0 +1,717 @@
+/*global*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.bodygrid {
+    display: grid;
+    grid-template-columns: 2% 96% 2%;
+}
+
+
+/*global slut*/
+
+/*content*/
+
+.content {
+    grid-column-start: 2;
+}
+
+.deler {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.bill-ramme {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.info-aabning {
+    width: 100%;
+}
+
+.info-bill {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.springer {
+    grid-column-start: 2;
+    width: 50%;
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+
+div.haand{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.haand img{
+    width: 20%;
+    margin: 0 auto;
+}
+
+.springerdiv{
+    width: 100%;
+}
+
+#fisk {
+    width: 20%;
+    align-self: baseline;
+    position: absolute;
+    margin-left: 60%;
+    margin-bottom: 10%;
+    
+    
+}
+
+#fiskediv {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#fiskespringer {
+    width: 50%;
+    margin-left: 20px;
+    margin-right: 40px;
+    margin-bottom: 10%;
+    align-self: flex-start;
+}
+
+#fisketxt {
+    width: 60%;
+}
+
+.haand {
+    width: 20%;
+    margin-left: 40px;
+    margin-bottom: 15px;
+}
+
+video {
+    position: absolute;
+    width: 100%;
+    z-index: -20;
+    min-width: 100%;
+    display: none;
+}
+
+.tider {
+    text-align: center;
+}
+
+.piltop {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.piltop img {
+    width: 20%;
+}
+
+section{
+    margin-bottom: 5%;
+}
+
+.toppen{
+    margin-top: 25%;
+}
+
+/*content slut*/
+
+/*tekst*/
+
+@font-face {
+    font-family: 'cheboygan';
+    src: url('cheboygan.woff') format('woff'),
+    url('cheboygan.woff2') format('woff2') url('cheboygan.ttf') format('truetype');
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'cheboygan', serif;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    color: white;
+    margin: 10px;
+    width: 80%;
+}
+
+h1 {
+    color: #cd6c01;
+    margin: 10px;
+    margin-top: 20px;
+    font-size: 50px;
+}
+
+h3 {
+    color: #d49957;
+    margin: 10px;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+h4 {
+    color: #ceb394;
+    margin: 10px;
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+a {
+    color: white;
+}
+
+/*tekst slut*/
+
+/*header*/
+
+header {
+    display: grid;
+    grid-template-columns: 5% 7.5% 37.5% 37.5% 7.5% 5%;
+    grid-template-rows: 100px 80px 100px 175px 200px;
+}
+
+.logo {
+    width: 100%;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 2;
+}
+
+header h2 {
+    color: black;
+    padding-top: 10px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+#aabent {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+}
+
+.daeng {
+    grid-row-start: 5;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    text-align: center;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.daeng p {
+    color: black;
+}
+
+.daeng a {
+    color: black;
+    text-decoration: none;
+}
+
+.illuminati {
+    margin-top: 40px;
+    width: 35%;
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+#landingimg {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    width: 100%;
+}
+
+/*header slut*/
+
+/*burger*/
+
+#toggle {
+    display: none;
+}
+
+#toggle:checked + .menu {
+    display: block;
+}
+
+.nav {
+    z-index: 1;
+    grid-row-start: 1;
+    grid-column-start: 6;
+    grid-column-end: 2;
+    float: right;
+}
+
+nav img {
+    float: right;
+    width: 17%;
+    padding-top: 10px;
+}
+
+.menu {
+    display: none;
+    width: 90%;
+    margin-top: 72px;
+    right: 20px;
+    width: 100%;
+    font-size: 30px;
+}
+
+.menu a {
+    line-height: 80px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    display: block;
+    border: 2px solid white;
+    background-color: black;
+    font-family: 'cheboygan';
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/*burger slut*/
+
+/*footer*/
+
+footer {
+    display: grid;
+    grid-template-columns: 2% 48% 48% 2%;
+    grid-template-rows: 5px 50px;
+}
+
+footer img {
+    width: 96%;
+    margin-left: 2%;
+    margin-bottom: 10px;
+    position: absolute;
+    z-index: -1;
+}
+
+.kontakt {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+}
+
+.adresse {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    text-align: right;
+}
+
+footer p {
+    font-size: 13px;
+    margin: 15px;
+}
+
+.adresse a {
+    text-decoration: none;
+}
+
+/*footer slut*/
+
+/*pile*/
+.nyepile{
+    right: 0;
+}
+
+.nyepile img{
+    width: 10%;
+    margin: 0;
+    position: fixed;
+    right: 3%;
+    z-index: 100;
+}
+
+.ny-top img{
+    top: 5%;
+}
+
+.ny-bund img{ 
+    top: 15%;
+}
+
+
+/*pile slut*/
+
+/*tablet*/
+
+@media (min-width:420px) {
+
+    header {
+        display: grid;
+        grid-template-columns: 10% 20% 40% 20% 10%;
+        grid-template-rows: 0.5fr 2fr 0.5fr;
+    }
+
+    video {
+        display: block;
+        width: 100%;
+    }
+
+    #landingimg {
+        display: none;
+    }
+
+    #aabent {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        margin-left: 30px;
+        margin-top: 5px;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        font-size: 30px;
+    }
+
+    .logo {
+        width: 100%;
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 2;
+    }
+
+    .nav {
+        grid-column-start: 6;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    .nav img {
+        margin-right: 30px;
+        margin-top: 5px;
+        width: 25%;
+    }
+
+    .menu {
+        width: 50%;
+        margin-top: 80px;
+        position: absolute;
+    }
+
+    .daeng {
+        width: 100%;
+        grid-row-start: 3;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .illuminati {
+        display: none;
+    }
+
+    .content {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+
+    .column {
+        width: 45%;
+        float: left;
+    }
+
+    
+    .toppen{
+    margin-top: 0%;
+}
+    .bill-ramme {
+        width: 100%;
+        margin-left: 10%;
+    }
+
+    .deler {
+        width: 100%;
+        margin: 0 auto;
+
+    }
+    
+    .springerdiv{
+        text-align: center;
+    }
+
+    div.haand{
+        width: 50%;
+    }
+    
+    .haand img{
+        width: 40%;
+    }
+    
+    #fisk {
+        width: 10%;
+        margin-left: 30%;
+        margin-bottom: 30%;
+    }
+
+    #fiskespringer {
+        margin-bottom: 15%;
+    }
+    #slam {
+        margin-top: 20%;
+        margin-bottom: 20%;
+    }
+
+    .piltop {
+        padding-top: 10%;
+    }
+    
+    .piltop img{
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+     h1{
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 5%;
+        text-align: center; 
+    }
+
+    #noshow {
+        display: none;
+    }
+    footer p {
+        font-size: 25px;
+        margin-top: 12%;
+    }
+    
+    #timeglas {
+        margin-top: 20px;
+    }
+}
+
+/*PC*/
+
+@media (min-width:1025px) {
+
+    header {
+        display: grid;
+        grid-template-columns: 10% 10% 14.63% 8.63% 13.3% 8.63% 14.63% 10% 10%;
+        grid-template-rows: 0.5fr 2fr 1fr;
+        margin-bottom: 130px;
+    }
+
+    video {
+        grid-column-start: 1;
+        grid-column-end: 10;
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+    
+    .bodygrid {
+        display: grid;
+        grid-template-columns: 15% 35% 35% 15%;
+    }
+    
+    .content {
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+
+    #aabent {
+        grid-column-start: 1;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+
+    .logo {
+        width: 100%;
+        grid-column-start: 4;
+        grid-column-end: 7;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+
+    .nav {
+        width: 100%;
+        grid-column-start: 6;
+        grid-column-end: 10;
+    }
+
+    .nav img {
+        margin-top: 20px;
+        width: 10%;
+    }
+
+    .menu {
+        width: 25%;
+        margin-top: 120px;
+        font-size: 20px;
+    }
+
+    .daeng {
+        grid-column-start: 5;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        text-align: center;
+        font-size: 18px;
+        margin-top: 50px;
+    }
+    
+    
+     h1{
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 5%;
+        text-align: center; 
+    }
+
+    .illuminati {
+        width: 50%;
+        display: inline;
+        margin-top: 10px;
+    }
+
+    .bill-ramme {
+        width: 80%;
+    }
+
+    
+    .springer {
+        width: 40%;
+        margin: 0 auto;
+    }
+    
+    .springerdiv{
+        width: 100%;
+        text-align: center;
+    }
+    #fiskespringer {
+        width: 50%;
+        margin-bottom: 20%;
+    }
+    .haand {
+        width: 10%;
+    }
+    .info-bill {
+        width: 50%;
+        margin-right: 25%;
+        margin-left: 25%;
+    }
+    .info-aabning{
+        width: 50%;
+        margin-right: 45%;
+        margin-left: 45%
+
+    }
+    .piltop {
+
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 20%;
+        margin-bottom: 20%;
+    }
+    .deler {
+        width: 50%;
+        margin-right: 25%;
+        margin-left: 25%;
+        margin-top: 10%;
+        margin-bottom: 5%;
+
+    }
+    #fisk {
+        width: 5%;
+        margin-left: 20%;
+    }
+    
+    
+    .haand img{
+        width: 20%;
+    }
+    
+    .ryk{
+        width: 100%;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 15% 35% 35% 15%;
+    }
+
+    footer p {
+        font-size: 30px;
+        margin-top: 16%;
+    }
+
+    .ramme {
+        width: 70%;
+        margin-left: 15%;
+        position: absolute;
+    }
+
+    .kontakt {
+        margin-left: 10%;
+    }
+
+    .adresse {
+        margin-right: 10%;
+    }
+    
+    .fa {
+        font-size: 50px;
+    }
+    
+    .info-bill {
+        width: 55%;
+    }
+
+}
+
+@media (min-width:1720px) {
+    
+    .column{
+        width: 50%;
+        align-items: center;
+    }
+    
+    .piltop{
+        width: 100%;
+    }
+
+}
