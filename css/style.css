@@ -350,9 +350,7 @@ footer p {
 /*footer slut*/
 
 /*pile*/
-.nyepile{
-    right: 0;
-}
+
 
 .nyepile img{
     width: 12%;
@@ -362,12 +360,37 @@ footer p {
     z-index: 100;
 }
 
+.toptxt{
+    top: 13%;
+    right: 2%;
+    text-align: right;
+    position: fixed;
+    z-index: 100%;
+    font-family: 'cheboygan', serif;
+    font-size: 1.2em;
+}
+
+.bundtxt{
+    top: 20%;
+    right: 1%;
+    text-align: right;
+    position: fixed;
+    z-index: 100%;
+    font-family: 'cheboygan', serif;
+    font-size: 1.2em;
+}
+
 .ny-top img{
     top: 5%;
 }
 
 .ny-bund img{ 
-    top: 30%;
+    top: 25%;
+}
+
+.nyepile img:hover{
+    width: 13%;
+    right: 2%;
 }
 
 
