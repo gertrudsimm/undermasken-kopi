@@ -361,7 +361,7 @@ footer p {
 }
 
 .toptxt{
-    top: 13%;
+    top: 8%;
     right: 2%;
     text-align: right;
     position: fixed;
@@ -371,7 +371,7 @@ footer p {
 }
 
 .bundtxt{
-    top: 20%;
+    top: 13%;
     right: 1%;
     text-align: right;
     position: fixed;
@@ -381,11 +381,11 @@ footer p {
 }
 
 .ny-top img{
-    top: 5%;
+    top: 1%;
 }
 
 .ny-bund img{ 
-    top: 25%;
+    top: 18%;
 }
 
 
