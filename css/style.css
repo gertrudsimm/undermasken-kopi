@@ -358,34 +358,17 @@ footer p {
     position: fixed;
     right: 3%;
     z-index: 100;
+    display: none;
 }
 
-.toptxt{
-    top: 8%;
-    right: 2%;
-    text-align: right;
-    position: fixed;
-    z-index: 100%;
-    font-family: 'cheboygan', serif;
-    font-size: 1.2em;
-}
 
-.bundtxt{
-    top: 13%;
-    right: 1%;
-    text-align: right;
-    position: fixed;
-    z-index: 100%;
-    font-family: 'cheboygan', serif;
-    font-size: 1.2em;
-}
 
 .ny-top img{
     top: 1%;
 }
 
 .ny-bund img{ 
-    top: 18%;
+    top: 13%;
 }
 
 
